@@ -20,7 +20,7 @@ class EventController extends Controller
             ->orderBy('start_date', 'asc')
             ->limit(3)
             ->get();
-        return view('events/event-list')
+        return view('event/event-list')
             ->with('upcomingEvents', $upcomingEvents)
             ->with('pastEvents', $pastEvents);
     }
@@ -28,13 +28,13 @@ class EventController extends Controller
     public function view(Event $event)
     {
 
-        return view('events.event-detail')->with('event',$event);
+        return view('event.event-detail')->with('event',$event);
 
     }
 
     public function add()
     {
-        return view('events.event-add');    }
+        return view('event.event-add');    }
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
