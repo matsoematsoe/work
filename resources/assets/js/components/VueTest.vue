@@ -6,7 +6,7 @@
                     <div class="panel-heading">Example Component</div>
 
                     <div class="panel-body">
-                        I'm an test component!
+                        I'm an VUE Test component!
                     </div>
                 </div>
             </div>

@@ -13,11 +13,17 @@
 <body>
 <div class="container">
     <div class="container" id="app">
+
         @yield('content')
+
     </div>
 
 </div>
 
-@yield('footer-script')
+{{--@yield('footer-script')--}}
+
+
+<script src="{{mix('js/app.js')}}"></script>
+{{--<script src="/js/app.js"></script>--}}
 </body>
 </html>

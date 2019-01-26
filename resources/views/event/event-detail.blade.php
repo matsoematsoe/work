@@ -40,6 +40,8 @@
 @endsection
 
 @section('footer-script')
+
+    <script src="/js/app.js"></script>
     <script>
         function initMap() {
             var uluru = {lat: {{$event->lat}}, lng: {{$event->long}} };
@@ -56,6 +58,9 @@
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAP_API_KEY')}}&callback=initMap">
     </script>
+
+
+
 @endsection
 
 @section('header-styles')

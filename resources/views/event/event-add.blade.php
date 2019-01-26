@@ -56,10 +56,14 @@
                         <h3 class="panel-title">Select the location</h3>
                     </div>
                     <div class="panel-body">
+
+
                         <div class="form-group">
                             <span class="error">{{$errors->first('lat')}}</span>
                             <span class="error">{{$errors->first('long')}}</span>
+
                             <event-location></event-location>
+
                         </div>
                     </div>
                 </div>
@@ -67,3 +71,10 @@
         </div>
     </form>
 @endsection
+
+{{--@extends('html')--}}
+
+{{--@section('content')--}}
+    {{--<event-location></event-location>--}}
+
+{{--@endsection--}}
