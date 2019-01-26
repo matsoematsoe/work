@@ -37,6 +37,10 @@ class EventController extends Controller
         return view('event.event-add');    }
     public function store(Request $request)
     {
+
+
+        return $request->all();
+
         $validator = Validator::make($request->all(), [
             'title' => 'required',
             'description' => 'required',

@@ -25,7 +25,6 @@ Vue.use(VueGoogleMaps, {
     }
 });
 
-Vue.component('vue-test', require('./components/VueTest.vue'));
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('event-location', require('./components/EventLocation.vue'));
 
